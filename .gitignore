@@ -1,0 +1,6 @@
+/target
+/.embuild
+/.cargo-cache
+/backupold*
+# KiCad editor lock files
+*.kicad_pcb.lck

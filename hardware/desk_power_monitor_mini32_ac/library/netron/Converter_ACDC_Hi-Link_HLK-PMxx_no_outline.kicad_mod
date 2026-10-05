@@ -1,0 +1,134 @@
+(footprint "Converter_ACDC_Hi-Link_HLK-PMxx_no_outline"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ACDC-Converter, 3W, Hi-Link, HLK-PMxx, THT, https://h.hlktech.com/download/ACDC%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%973W%E7%B3%BB%E5%88%97/1/%E6%B5%B7%E5%87%8C%E7%A7%913W%E7%B3%BB%E5%88%97%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%97%E8%A7%84%E6%A0%BC%E4%B9%A6V2.8.pdf, generated with kicad-footprint-generator StandardBox_generator.py")
+	(tags "ACDC-Converter 3W THT Hi-Link board mount module")
+	(property "Reference" "PS1"
+		(at 1.394 -9.939 0)
+		(layer "F.SilkS")
+		(uuid "7714fed6-d660-4ed8-9efb-7e6c15a3645e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HLK-PM01"
+		(at 9.776 4.539 0)
+		(layer "F.Fab")
+		(uuid "446e7cda-32af-4989-b5f0-e249592bc21c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://h.hlktech.com/download/ACDC%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%973W%E7%B3%BB%E5%88%97/1/%E6%B5%B7%E5%87%8C%E7%A7%913W%E7%B3%BB%E5%88%97%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%97%E8%A7%84%E6%A0%BC%E4%B9%A6V2.8.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1fa09a07-1208-40c1-80de-a98e82938ee7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Compact AC/DC board mount power module 3W 5V"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c8b5a59f-769c-45f7-95cc-95d438d0d6e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -4.11 -9)
+		(end 33.19 14)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1ce92d55-2b0c-4eb6-96c2-cd0a46ff06bc")
+	)
+	(fp_poly
+		(pts
+			(xy -2.86 -6.75) (xy -2.86 12.75) (xy 31.94 12.75) (xy 31.94 -7.75) (xy -1.86 -7.75)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "84bf15c3-b4e1-4f60-8b14-90c1ea4156f7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 7.236 -0.04 0)
+		(layer "F.Fab")
+		(uuid "9ec5a8d6-339d-4716-90f9-cebfd4c7e7d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.147059)
+		(uuid "eedb3699-8fef-4ce2-89b9-24212d2025c1")
+	)
+	(pad "2" thru_hole oval
+		(at 0 5)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6eb08560-0596-4847-a64d-a81cc913c8b5")
+	)
+	(pad "3" thru_hole oval
+		(at 29.08 -5)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bdb85e6d-f1fc-4825-af6a-15021976b0c3")
+	)
+	(pad "4" thru_hole oval
+		(at 29.08 10)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9a23a14a-3dcf-4726-b6c0-a8e36ea30af6")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Converter_ACDC.3dshapes/Converter_ACDC_Hi-Link_HLK-PMxx.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

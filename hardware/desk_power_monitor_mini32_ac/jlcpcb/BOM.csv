@@ -1,0 +1,10 @@
+"Comment","Designator","Footprint","LCSC Part #"
+"100nF","C1","C_0805_2012Metric","C49678"
+"1nF","C2","C_0805_2012Metric","C62774"
+"LED","D1","D_0805_2012Metric","C2297"
+
+"HLK-PM01","PS1","Converter_ACDC_Hi-Link_HLK-PMxx",""
+"1K","R3","R_0805_2012Metric","C17513"
+"10k","R1,R2","R_0805_2012Metric","C17414"
+"ACS712ELCTR-20A","U2","SOIC-8_3.9x4.9mm_P1.27mm","C10681"
+

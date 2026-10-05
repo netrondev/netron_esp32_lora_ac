@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "esp32-wemos-d1-mini")(type "KiCad")(uri "${KIPRJMOD}/library/kicad-esp32-wemos-d1-mini/esp32-wemos-d1-mini.pretty")(options "")(descr ""))
+  (lib (name "netron")(type "KiCad")(uri "${KIPRJMOD}/library/netron")(options "")(descr ""))
+  (lib (name "easyeda2kicad")(type "KiCad")(uri "${KIPRJMOD}/library/easyeda2kicad.pretty")(options "")(descr ""))
+)

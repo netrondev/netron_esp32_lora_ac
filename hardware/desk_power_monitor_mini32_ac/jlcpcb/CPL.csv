@@ -1,0 +1,11 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"PS1","HLK-PM01","Converter_ACDC_Hi-Link_HLK-PMxx_no_outline",102.950000,-98.168000,90.000000,bottom
+"C1","100nF","C_0805_2012Metric",103.481500,-86.430000,-90.000000,top
+"C2","1nF","C_0805_2012Metric",108.585000,-86.426000,90.000000,top
+"D1","LED","D_0805_2012Metric",102.211500,-83.382000,180.000000,top
+"J1","esp32-pins-header-left","PinHeader_2x10_P2.54mm_Vertical",88.906000,-72.050000,0.000000,top
+"J2","esp32-pins-header-right","PinHeader_2x10_P2.54mm_Vertical",114.306000,-72.050000,0.000000,top
+"R1","10k","R_0805_2012Metric",106.021500,-86.430000,90.000000,top
+"R2","10k","R_0805_2012Metric",105.894500,-83.444000,0.000000,top
+"R3","1K","R_0805_2012Metric",101.195500,-86.430000,-90.000000,top
+"U2","ACS712xLCTR-20A","SOIC-8_3.9x4.9mm_P1.27mm",105.537000,-92.964000,90.000000,top

@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = ["app"]
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true
+opt-level = "z"
+
+# esp-storage requires opt-level 2 or 3 for ESP32
+[profile.release.package.esp-storage]
+opt-level = 3
+
+[profile.dev.package.esp-storage]
+opt-level = 3

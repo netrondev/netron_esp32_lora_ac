@@ -1,0 +1,6 @@
+target/
+.git/
+*.md
+.gitignore
+.cargo-cache/
+.embuild/

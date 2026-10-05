@@ -1,0 +1,14 @@
+[package]
+name = "milesight_d4"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "cookies", "rustls-tls"], default-features = false }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+aes = "0.8"
+cbc = "0.1"
+base64 = "0.22"

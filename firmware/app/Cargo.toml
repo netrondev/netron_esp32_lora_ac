@@ -1,0 +1,90 @@
+[package]
+edition      = "2024"
+name         = "app"
+rust-version = "1.88"
+version      = "0.7.0"
+license      = "MIT OR Apache-2.0"
+
+# Bring-up scratch binaries live in src/bin/ but are not all kept current with
+# the library. Declare the ones that are, rather than auto-discovering every
+# file and having a stale demo break the build.
+autobins     = false
+
+[[bin]]
+name = "app"
+path = "./src/bin/main.rs"
+test = false
+
+[[bin]]
+name = "adc_test"
+path = "./src/bin/adc_test.rs"
+test = false
+
+[[bin]]
+name = "acs712_current_test"
+path = "./src/bin/acs712_current_test.rs"
+test = false
+
+[[bin]]
+name = "ra01sh_test"
+path = "./src/bin/ra01sh_test.rs"
+test = false
+
+[[bin]]
+name = "rx_test"
+path = "./src/bin/rx_test.rs"
+test = false
+
+[[bin]]
+name = "otaa_test"
+path = "./src/bin/otaa_test.rs"
+test = false
+
+[lib]
+test = false
+
+[dependencies]
+esp-hal = { version = "~1.0", features = ["esp32", "unstable"] }
+esp-println = { version = "0.16", features = ["esp32", "auto"] }
+esp-bootloader-esp-idf = { version = "0.4.0", features = ["esp32"] }
+esp-radio = { version = "0.17", features = ["esp32", "wifi"] }
+esp-rtos = { version = "0.2", features = ["esp32", "embassy", "esp-radio", "esp-alloc"] }
+esp-alloc = "0.9"
+embassy-executor = "0.9"
+embassy-time = "0.4"
+embassy-net = { version = "0.6", features = ["tcp", "udp", "dhcpv4", "medium-ethernet", "dns"] }
+heapless = "0.8"
+static_cell = "2.1"
+critical-section = "1.2.0"
+embedded-hal = "1.0"
+embedded-io-async = "0.6"
+libm = "0.2"
+microfft = "0.6"
+nb = "1.1"
+reqwless = { version = "0.13", default-features = false, features = ["embedded-tls"] }
+rand_core = "0.6"
+esp-storage = { version = "0.6", features = ["esp32"] }
+embedded-storage = "0.3"
+aes = "0.8"
+
+
+[profile.dev]
+# Rust debug is too slow.
+# For debug builds always builds with some optimization
+opt-level = "s"
+
+[profile.release]
+codegen-units    = 1     # LLVM can perform better optimizations using a single thread
+debug            = 2
+debug-assertions = false
+incremental      = false
+lto              = 'fat'
+opt-level        = 's'
+overflow-checks  = false
+
+# esp-storage requires opt-level 2 or 3 for ESP32
+[profile.release.package.esp-storage]
+opt-level = 3
+
+[profile.dev.package.esp-storage]
+opt-level = 3
